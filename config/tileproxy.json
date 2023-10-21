@@ -1,0 +1,24 @@
+{
+  "sources":
+  {
+    "osm": {
+      "source": "https://b.tile.openstreetmap.de/%d/%d/%d.png",
+      "maxZoom": 18
+    },
+    "imperium": {
+      "source": "https://dh.gu.se/tiles/imperium/%d/%d/%d.png",
+      "maxZoom": 11
+    },
+    "awmc": {
+      "source": "https://cawm.lib.uiowa.edu/tiles/%d/%d/%d.png",
+      "maxZoom": 11
+    },
+    "Limes": {
+      "source": "https://www.chariovalda.nl/Limes/maps/Limes/%d/%d/%d.png",
+      "maxZoom": 14
+    }
+  },
+  "referrer": "https://vici.org/",
+  "baseDir": "tiles"
+}
+
