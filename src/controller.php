@@ -1,7 +1,7 @@
 <?php
 
-require "../src/Tile.php";
-require "../src/Download.php";
+require "./Tile.php";
+require "./Download.php";
 
 function show404($code = "404")
 {
