@@ -12,7 +12,7 @@ class Tile
     public function __construct(string $uri, array $sources)
     {
         preg_match('/\\.[^.\\s]{3,4}$/', $uri, $ext);
-        $this->file_extension = (string)$ext[0];
+        $this->file_extension = $ext[0] ?? '';
         $tileparts = explode("/", preg_replace('/'.$this->file_extension.'$/', '', $uri));
 
         $this->tileset = $tileparts[1];
