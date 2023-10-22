@@ -11,7 +11,7 @@
     },
     "awmc": {
       "source": "https://cawm.lib.uiowa.edu/tiles/%d/%d/%d.png",
-      "maxZoom": 11
+      "maxZoom": 13
     },
     "Limes": {
       "source": "https://www.chariovalda.nl/Limes/maps/Limes/%d/%d/%d.png",
