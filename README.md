@@ -2,7 +2,7 @@
 
 A caching proxy for geo tiles, as used by [Vici.org](https://vici.org).
 
-The core for this service is in the webserver configuration. 
+The core for this service is in the webserver configuration:
 
     location ~ ^/(.*)$ {
         try_files $uri /tiles/$1 @tiles;
@@ -15,9 +15,9 @@ The core for this service is in the webserver configuration.
         include        fastcgi_params;
     }
 
-The `try_files` directive will return the image from disk, and only when it is not there, `controller.php` is executed.
+The `try_files` directive will return the image from disk, and only when it is not there, `controller.php` is called.
 
-The controller is configured in `config/tileproxy.json`, see the example `tileproxy.json_example`. 
+The controller uses the configuration in `config/tileproxy.json`. See the example `tileproxy.json_example`. 
 The controller wil try to download the tile from the provided source, send it to the user and store in on disk. 
 Next time the same tile is requested, it will be simply served by the webserver.
 
